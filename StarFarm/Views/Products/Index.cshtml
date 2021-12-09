@@ -1,0 +1,19 @@
+﻿@model  List<StarFarm.Models.Product>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<link href="~/Content/Products.css" rel="stylesheet"/>
+<h2>Index</h2>
+
+@foreach(var product in Model)
+            {
+                <div class="col-md-3 table-bordered product-block ">
+                    <img src="" />
+                    <p>@product.Product_Name</p>
+                    <p>@product.Price</p>
+                    <p>@product.Description</p>
+                </div>
+            }
+<div class="row"></div>
